@@ -13,12 +13,12 @@ namespace IotHubDevice.Repository
 {
     public class IoTDeviceProperties
     {
-        private static string iothubConnectionString = "HostName=COURSEIOTHUBDEMO.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=z6j5aAhwoUFnme7OVB4XGYTCtMKkYpW4zHMdY2wdoz4=\n";
+        private static string iothubConnectionString = "HostName=COURSEIOTHUBDEMO.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=/tPyA6Z5NEgS7M2phtFcCi2b1nUDl4YnszIm8wzK8a4=";
         public static RegistryManager registryManager=RegistryManager.CreateFromConnectionString(iothubConnectionString);
 
         public static DeviceClient client = null;
 
-        public static string myDeviceConnection = "HostName=COURSEIOTHUBDEMO.azure-devices.net;DeviceId=IOTDeviceDemo;SharedAccessKey=BNbBqkynun2ZuohBWuM9Awv/55EU6s7V1+WaIRWIfX4=";
+        public static string myDeviceConnection = "HostName=COURSEIOTHUBDEMO.azure-devices.net;DeviceId=mydevicedemo;SharedAccessKey=Z5OMzQWcLsI+0c9PMkdWhL87RmKFdoQozHnpX6eJLyg=";
         public static async Task AddDeviceProperties(string deviceName,DeviceProperties deviceProperties)
         {
             if(string.IsNullOrEmpty(deviceName))
